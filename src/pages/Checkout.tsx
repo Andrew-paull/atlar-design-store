@@ -25,7 +25,7 @@ const Checkout = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Checkout:", formData);
   };

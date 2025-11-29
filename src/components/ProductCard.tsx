@@ -3,15 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
-interface ProductCardProps {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
-  category?: string;
-}
-
-export const ProductCard = ({ id, name, price, image, category }: ProductCardProps) => {
+export const ProductCard = ({ id, name, price, image, category }) => {
   return (
     <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300">
       <Link to={`/product/${id}`}>
